@@ -7,7 +7,7 @@ interface SidebarProps {
 
 export function Sidebar({ isOpen, onClose }: SidebarProps) {
     return (
-        <aside className={`fixed inset-y-0 left-0 w-64 transform bg-gray-800 p-5 ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform`}>
+        <aside className={`fixed inset-y-0 left-0 w-64 transform bg-gray-700 p-5 ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform`}>
             <button onClick={onClose} className="absolute right-4 top-4 text-gray-400 hover:text-white">
                 <X className="h-6 w-6" />
             </button>

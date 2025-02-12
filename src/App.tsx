@@ -64,7 +64,7 @@ function App() {
             {/* Main Content */}
             <div className="flex flex-1 flex-col">
                 {/* Header */}
-                <header className="flex items-center justify-between bg-gray-800 px-6 py-4 shadow-lg">
+                <header className="flex items-center justify-between bg-gray-700 px-3 py-2 shadow-lg">
                     <div className="flex items-center gap-3">
                         <button className="rounded-md bg-gray-700 p-2 transition hover:bg-gray-600" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
                             <Menu className="h-6 w-6" />
@@ -74,17 +74,18 @@ function App() {
                     </div>
                     <NavigationMenu>
                         <NavigationMenuList className="flex space-x-6">
-                            <NavigationMenuItem className="cursor-pointer rounded-md bg-yellow-500 px-3 py-1 text-white transition duration-200 hover:bg-yellow-600">
-                                <NavigationMenuTrigger>Sign In</NavigationMenuTrigger>
+                            <NavigationMenuItem className="hover:bg-yellow-550 cursor-pointer rounded-md bg-yellow-500 px-3 py-1 text-white transition duration-200">
+                                <NavigationMenuTrigger className="text-lg font-bold">Sign In👩🏻‍💼</NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="w-[200px] rounded-lg bg-white p-2 shadow-lg">
-                                        <li className="cursor-pointer rounded p-2 text-sm text-gray-700 hover:bg-gray-100">Google</li>
-                                        <li className="cursor-pointer rounded p-2 text-sm text-gray-700 hover:bg-gray-100">GitHub</li>
+                                    <ul className="w-[200px] rounded-lg bg-gray-300 p-2 shadow-lg">
+                                        <li className="cursor-pointer rounded p-2 text-sm text-gray-900 hover:bg-gray-100">Google</li>
+                                        <li className="cursor-pointer rounded p-2 text-sm text-gray-900 hover:bg-gray-100">GitHub</li>
+                                        <li className="cursor-pointer rounded p-2 text-sm text-gray-900 hover:bg-gray-100">Facebook</li>
                                     </ul>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
-                            <NavigationMenuItem className="cursor-pointer rounded-md bg-yellow-500 px-5 py-3 text-white transition duration-200 hover:bg-yellow-600">
-                                Sign Up
+                            <NavigationMenuItem className="hover:bg-yellow-550 cursor-pointer rounded-md bg-yellow-500 px-5 py-2.5 text-lg font-bold text-white transition duration-200">
+                                Sign Up👨🏻‍💼
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
