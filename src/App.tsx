@@ -58,7 +58,7 @@ function App() {
     const { t } = useTranslation();
 
     return (
-        <div className="flex min-h-screen bg-[url('assets/image.png')] text-white">
+        <div className="flex min-h-screen w-screen bg-[url('assets/image.png')] text-white">
             {/* Sidebar */}
 
             {/* Main Content */}
@@ -74,7 +74,7 @@ function App() {
                     </div>
                     <NavigationMenu>
                         <NavigationMenuList className="flex space-x-6">
-                            <NavigationMenuItem className="hover:bg-yellow-550 cursor-pointer rounded-md bg-yellow-500 px-3 py-1 text-white transition duration-200">
+                            <NavigationMenuItem className="hover:bg-yellow-550 cursor-pointer rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600 px-3 py-1 text-white transition duration-200">
                                 <NavigationMenuTrigger className="text-lg font-bold">Sign In👩🏻‍💼</NavigationMenuTrigger>
                                 <NavigationMenuContent>
                                     <ul className="w-[200px] rounded-lg bg-gray-300 p-2 shadow-lg">
@@ -84,7 +84,8 @@ function App() {
                                     </ul>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
-                            <NavigationMenuItem className="hover:bg-yellow-550 cursor-pointer rounded-md bg-yellow-500 px-5 py-2.5 text-lg font-bold text-white transition duration-200">
+
+                            <NavigationMenuItem className="hover:bg-yellow-550 cursor-pointer rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600 px-5 py-2.5 text-lg font-bold text-white transition duration-200">
                                 Sign Up👨🏻‍💼
                             </NavigationMenuItem>
                         </NavigationMenuList>
