@@ -74,7 +74,7 @@ function App() {
                     <NavigationMenu>
                         <NavigationMenuList className="flex space-x-6">
                             <NavigationMenuItem className="hover:bg-yellow-550 cursor-pointer rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600 px-3 py-1 text-white transition duration-200">
-                                <NavigationMenuTrigger className="text-lg font-bold">Sign In👩🏻‍💼</NavigationMenuTrigger>
+                                <NavigationMenuTrigger className="text-lg font-bold sm:text-black">Sign In👩🏻‍💼</NavigationMenuTrigger>
                                 <NavigationMenuContent>
                                     <ul className="w-[200px] rounded-lg bg-gray-300 p-2 shadow-lg">
                                         <li className="cursor-pointer rounded p-2 text-sm text-gray-900 hover:bg-gray-100">Google</li>
@@ -84,7 +84,7 @@ function App() {
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
 
-                            <NavigationMenuItem className="hover:bg-yellow-550 cursor-pointer rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600 px-5 py-2.5 text-lg font-bold text-white transition duration-200">
+                            <NavigationMenuItem className="hover:bg-yellow-550 bg-gradient-to-r from-yellow-400 to-yellow-600 sm:cursor-pointer sm:rounded-md sm:px-5 sm:py-2.5 sm:text-lg sm:font-bold sm:text-black sm:transition sm:duration-200">
                                 Sign Up👨🏻‍💼
                             </NavigationMenuItem>
                         </NavigationMenuList>
