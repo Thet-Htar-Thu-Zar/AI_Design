@@ -9,6 +9,7 @@ import StatusMessage from "@/components/ui/status-message";
 import useRealTime from "@/hooks/useRealtime";
 import useAudioRecorder from "@/hooks/useAudioRecorder";
 import useAudioPlayer from "@/hooks/useAudioPlayer";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 
@@ -59,10 +60,7 @@ function App() {
 
     return (
         <div className="flex min-h-screen w-screen bg-[url('assets/image.png')] text-white">
-            {/* Sidebar */}
-
-            {/* Main Content */}
-            <div className="flex flex-1 flex-col">
+            <div className="flex flex-1 flex-col bg-gray-600">
                 {/* Header */}
                 <header className="flex items-center justify-between bg-gray-700 px-3 py-2 shadow-lg">
                     <div className="flex items-center gap-3">
@@ -72,6 +70,7 @@ function App() {
                         <img src="/fusion-logo.png" alt="fusion logo" className="h-12" />
                         <div className="text-sm font-bold">Fusion Solution</div>
                     </div>
+
                     <NavigationMenu>
                         <NavigationMenuList className="flex space-x-6">
                             <NavigationMenuItem className="hover:bg-yellow-550 cursor-pointer rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600 px-3 py-1 text-white transition duration-200">
@@ -93,17 +92,20 @@ function App() {
                 </header>
                 <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
-                {/* Main Content */}
                 <main className="flex flex-grow flex-col items-center justify-center px-4">
-                    <h1 className="mb-8 bg-gradient-to-r from-[#a67511] to-[#353942] bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
-                        {t("app.title")}
-                    </h1>
+                    <div className="flex flex-col items-center justify-center space-y-1">
+                        <h1 className="mb-8 bg-gradient-to-r from-yellow-500 to-[#0075c5] bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
+                            {t("app.title")}
+                        </h1>
+                        <DotLottieReact src="https://lottie.host/480c360c-c84b-42ec-9fd0-b8409c4e53cb/9KeguQ4fat.lottie" loop autoplay className="h-15 w-15" />
+                    </div>
+
                     <Button
                         onClick={onToggleListening}
                         className={`h-14 w-60 rounded-full text-lg font-semibold shadow-lg transition duration-300 ${
                             isRecording
                                 ? "bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800"
-                                : "bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700"
+                                : "to-#4e859b bg-gradient-to-r from-yellow-400 hover:from-yellow-500 hover:to-yellow-700"
                         }`}
                         aria-label={isRecording ? t("app.stopRecording") : t("app.startRecording")}
                     >
